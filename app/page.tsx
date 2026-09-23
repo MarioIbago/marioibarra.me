@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ProjectCard } from '@/components/project-card';
 import { SectionHeading } from '@/components/section-heading';
+import { StackExplorer } from '@/components/stack-explorer';
 import { contactEmail } from '@/lib/site';
 import { projects } from '@/lib/projects';
 
@@ -82,12 +83,7 @@ export default function HomePage() {
       <section className="page-section page-section--dark" aria-label="Tecnologías y herramientas">
         <div className="page-container">
           <SectionHeading index="02 / Herramientas" title="Una idea, varias capas." description="Diseño la experiencia y conecto las piezas de software que la sostienen: interfaces, modelos, datos y despliegue." />
-          <div className="stack-list">
-            <div className="stack-group"><h3>Interfaces</h3><ul><li>React</li><li>Next.js</li><li>Vite</li><li>TypeScript</li><li>HTML / CSS</li></ul></div>
-            <div className="stack-group"><h3>Aplicaciones</h3><ul><li>Node.js</li><li>Python</li><li>APIs</li><li>RAG</li><li>Modelos de IA</li></ul></div>
-            <div className="stack-group"><h3>Datos</h3><ul><li>SQL</li><li>NoSQL</li><li>Firebase</li><li>Firestore</li><li>Pinecone</li></ul></div>
-            <div className="stack-group"><h3>Infraestructura</h3><ul><li>Vercel</li><li>Cloudflare</li><li>GitHub</li><li>Visual Studio Code</li><li>Codex</li><li>Claude Code</li></ul></div>
-          </div>
+          <StackExplorer />
           <p className="stack-note">El stack cambia según el problema; la herramienta es parte del diseño, no el objetivo.</p>
         </div>
       </section>

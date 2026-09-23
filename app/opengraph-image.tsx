@@ -36,7 +36,7 @@ export default function OpenGraphImage() {
           </div>
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12, fontSize: 18 }}>
-          <span style={{ width: 12, height: 12, borderRadius: 10, backgroundColor: '#ff6a2a' }} />
+          <span style={{ width: 12, height: 12, borderRadius: 10, backgroundColor: '#1768d8' }} />
           marioibarra.me
         </div>
       </div>
