@@ -4,7 +4,10 @@ import { SectionHeading } from '@/components/section-heading';
 import { contactEmail } from '@/lib/site';
 import { projects } from '@/lib/projects';
 
-const selectedProjects = projects.filter((project) => project.featured);
+const featuredOrder = ['billqo', 'papermaxing', 'cuantly', 'economia', 'medical-ai-rag'];
+const selectedProjects = projects
+  .filter((project) => project.featured)
+  .sort((first, second) => featuredOrder.indexOf(first.slug) - featuredOrder.indexOf(second.slug));
 
 export default function HomePage() {
   return (
@@ -23,11 +26,11 @@ export default function HomePage() {
             <rect className="hero-route-node" x="540" y="458" width="16" height="16" />
             <circle className="hero-route-node" cx="47" cy="284" r="5" />
             <circle className="hero-route-node" cx="872" cy="344" r="5" />
-            <text className="hero-route-label" x="321" y="136">CONTEXTO / 01</text>
-            <text className="hero-route-label" x="604" y="101">RUTAS / 02</text>
-            <text className="hero-route-label" x="570" y="518">SISTEMAS / 03</text>
+            <text className="hero-route-label" x="321" y="136">// CONTEXTO / 01</text>
+            <text className="hero-route-label" x="604" y="101">// RUTAS / 02</text>
+            <text className="hero-route-label" x="570" y="518">// SISTEMAS / 03</text>
           </svg>
-          <div className="hero__graphic-note"><span>Ideas</span><span>Aprendizaje</span><span>Herramientas</span></div>
+          <div className="hero__graphic-note"><span>[ 01 ] IDEA</span><span>[ 02 ] SISTEMA</span><span>[ 03 ] HERRAMIENTA</span></div>
         </div>
         <div className="hero__inner">
           <div className="hero__copy">
