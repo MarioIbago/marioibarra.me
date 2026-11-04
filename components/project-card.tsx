@@ -11,7 +11,6 @@ export function ProjectCard({ project }: { project: Project }) {
     <article className={`project-card${project.featured ? ' project-card--featured' : ''}`}>
       <Link className="project-card__visual-link" href={`/proyectos/${project.slug}`} aria-label={`Conocer ${project.name}`}>
         <ProjectVisual project={project} />
-        <span className="project-card__number" aria-hidden="true">{String(projectsIndex(project.slug)).padStart(2, '0')}</span>
         <span className="project-card__corner" aria-hidden="true">↗</span>
       </Link>
       <div className="project-card__body">
@@ -28,9 +27,4 @@ export function ProjectCard({ project }: { project: Project }) {
       </div>
     </article>
   );
-}
-
-function projectsIndex(slug: string) {
-  const order = ['cuantly', 'papermaxing', 'billqo', 'economia', 'medical-ai-rag', 'notes-to-latex'];
-  return order.indexOf(slug) + 1;
 }

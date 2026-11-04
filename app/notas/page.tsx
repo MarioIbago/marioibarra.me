@@ -12,13 +12,13 @@ export default function NotesPage() {
     <>
       <section className="page-intro">
         <div className="page-container page-intro__grid">
-          <h1>Notas de trabajo, no ruido.</h1>
+          <h1>Notas e ideas en proceso.</h1>
           <p className="page-intro__description">Un espacio para escribir sobre proyectos, sistemas e ideas mientras toman forma.</p>
         </div>
       </section>
       <section className="page-content">
         <div className="page-container">
-          <SectionHeading index="01 / Diario" title="Todavía no hay publicaciones." description="Prefiero abrir esta sección cuando tenga una primera nota que valga la pena compartir." />
+          <SectionHeading index="01 / Diario" title="Todavía no hay publicaciones." description="Aquí compartiré apuntes sobre proyectos, sistemas y lo que voy aprendiendo." />
           <div className="empty-journal">
             <div>
               <h2>Las primeras notas están en camino.</h2>

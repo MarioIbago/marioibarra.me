@@ -4,7 +4,7 @@ import { projects } from '@/lib/projects';
 
 export const metadata: Metadata = {
   title: 'Laboratorio',
-  description: 'Herramientas y experimentos para explorar IA, lectura de documentos y escritura matemática.',
+  description: 'Herramientas y experimentos de Mario Ibarra sobre software, IA y manejo de información.',
   alternates: { canonical: '/laboratorio' },
 };
 
@@ -16,7 +16,7 @@ export default function LabPage() {
       <section className="page-intro">
         <div className="page-container page-intro__grid">
           <h1>Un laboratorio de herramientas concretas.</h1>
-          <p className="page-intro__description">Prototipos y proyectos pequeños que exploran cómo la IA puede ayudar con tareas específicas, sin esconder el proceso.</p>
+          <p className="page-intro__description">Un espacio para explorar herramientas, probar ideas y compartir proyectos en distintas etapas.</p>
         </div>
       </section>
       <section className="page-content">

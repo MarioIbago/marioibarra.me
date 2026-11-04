@@ -1,6 +1,15 @@
 import type { Project } from '@/lib/projects';
 
 export function ProjectVisual({ project }: { project: Pick<Project, 'slug' | 'visualLabel'> }) {
+  if (project.slug === 'cuantly' || project.slug === 'billqo') {
+    const isCuantly = project.slug === 'cuantly';
+    return (
+      <div className={'project-visual project-visual--' + project.slug + ' project-visual--screenshot'}>
+        <img src={isCuantly ? '/projects/cuantly-demo.png' : '/projects/billqo-acceso.png'} width={isCuantly ? 1200 : 1440} height={isCuantly ? 941 : 1024} alt={isCuantly ? 'Captura de la demostración de práctica y retroalimentación de Cuantly' : 'Captura de la pantalla de acceso de Billqo'} loading="lazy" />
+        <span className="project-visual__caption project-visual__caption--photo">{isCuantly ? 'Demo de práctica' : 'Vista de acceso'}</span>
+      </div>
+    );
+  }
   return (
     <div className={`project-visual project-visual--${project.slug}`} aria-hidden="true">
       <svg className="project-visual__svg" viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg">
