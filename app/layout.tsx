@@ -6,12 +6,12 @@ import { siteUrl } from '@/lib/site';
 import '@fontsource-variable/host-grotesk';
 import './globals.css';
 
-const siteDescription = 'Portafolio de Mario Ibarra Gómez: proyectos, aplicaciones, sistemas, inteligencia artificial e infraestructura.';
+const siteDescription = 'Soy Mario Ibarra: estudiante de Economía en la UDEM, fundador de Cuantly y curioso por la programación. Aquí comparto mis proyectos y aprendizajes.';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: 'Mario Ibarra Gómez — portafolio de sistemas e inteligencia artificial',
+    default: 'Mario Ibarra — proyectos, programación y curiosidad',
     template: '%s | Mario Ibarra Gómez',
   },
   description: siteDescription,
@@ -23,13 +23,13 @@ export const metadata: Metadata = {
     locale: 'es_MX',
     url: '/',
     siteName: 'Mario Ibarra Gómez',
-    title: 'Mario Ibarra Gómez — portafolio de sistemas e inteligencia artificial',
+    title: 'Mario Ibarra — proyectos, programación y curiosidad',
     description: siteDescription,
     images: [{ url: '/opengraph-image', width: 1200, height: 630, alt: 'Portafolio de Mario Ibarra Gómez' }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mario Ibarra Gómez — portafolio de sistemas e inteligencia artificial',
+    title: 'Mario Ibarra — proyectos, programación y curiosidad',
     description: siteDescription,
     images: ['/opengraph-image'],
   },
