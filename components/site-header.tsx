@@ -39,9 +39,9 @@ export function SiteHeader() {
         </button>
         <nav id="primary-navigation" className={'primary-navigation' + (open ? ' is-open' : '')} aria-label="Navegación principal">
           {links.map((link) => <Link href={link.href} key={link.href} aria-current={pathname === link.href || (link.href !== '/' && pathname.startsWith(link.href + '/')) ? 'page' : undefined} onClick={() => setOpen(false)}>{link.label}</Link>)}
-          <a className="header-contact header-contact--mobile" href={'mailto:' + contactEmail}>Hablemos <Icon name="arrow" size={16} /></a>
+          <a className="header-contact header-contact--mobile" href={'mailto:' + contactEmail}>Escríbeme <Icon name="arrow" size={16} /></a>
         </nav>
-        <a className="header-contact header-contact--desktop" href={'mailto:' + contactEmail}>Hablemos <Icon name="arrow" size={16} /></a>
+        <a className="header-contact header-contact--desktop" href={'mailto:' + contactEmail}>Escríbeme <Icon name="arrow" size={16} /></a>
       </div>
     </header>
   );
