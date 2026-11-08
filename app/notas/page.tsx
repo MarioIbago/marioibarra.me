@@ -3,7 +3,7 @@ import { SectionHeading } from '@/components/section-heading';
 
 export const metadata: Metadata = {
   title: 'Notas',
-  description: 'Un diario personal sobre proyectos, herramientas, sistemas y aprendizajes. Próximamente.',
+  description: 'Ideas, trucos, descubrimientos y experimentos de Mario Ibarra mientras aprende programación, economía y tecnología.',
   alternates: { canonical: '/notas' },
 };
 
@@ -12,13 +12,13 @@ export default function NotesPage() {
     <>
       <section className="page-intro">
         <div className="page-container page-intro__grid">
-          <h1>Notas e ideas en proceso.</h1>
-          <p className="page-intro__description">Un espacio para escribir sobre proyectos, sistemas e ideas mientras toman forma.</p>
+          <h1>Lo que descubro mientras construyo.</h1>
+          <p className="page-intro__description">Aquí quiero compartir trucos, errores, herramientas e ideas que descubro al programar y experimentar.</p>
         </div>
       </section>
       <section className="page-content">
         <div className="page-container">
-          <SectionHeading index="01 / Diario" title="Todavía no hay publicaciones." description="Aquí compartiré apuntes sobre proyectos, sistemas y lo que voy aprendiendo." />
+          <SectionHeading index="01 / Diario" title="Pronto compartiré mis primeras notas." description="Habrá recursos, experimentos y aprendizajes reales. Sin contenido de relleno." />
           <div className="empty-journal">
             <div>
               <h2>Las primeras notas están en camino.</h2>

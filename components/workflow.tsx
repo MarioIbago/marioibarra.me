@@ -72,7 +72,6 @@ export function Workflow() {
         <div className="workflow__top">
           <div className="workflow__brand"><span className="workflow__mark" aria-hidden="true">&gt;_</span><strong>mario.ibarra</strong></div>
           <span className="workflow__context">~/portafolio</span>
-          <span className="workflow__hint">Explora mi trabajo</span>
         </div>
         <div className="workflow__body">
           <div className="workflow__tabs" role="tablist" aria-label="Explorar el portafolio">
