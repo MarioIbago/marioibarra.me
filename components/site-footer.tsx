@@ -11,7 +11,7 @@ export function SiteFooter() {
     <footer className="site-footer">
       <div className="page-container">
         <div className="footer-main">
-          <div><Link className="brand" href="/"><span className="brand__mark" aria-hidden="true">&gt;_</span><span className="brand__name">Mario Ibarra</span></Link><p>Proyectos, ideas y herramientas para conectar sistemas, datos y personas.</p></div>
+          <div><Link className="brand" href="/"><span className="brand__mark" aria-hidden="true">&gt;_</span><span className="brand__name">Mario Ibarra</span></Link><p>Curioso por naturaleza. Estudio Economía, programo y comparto lo que voy aprendiendo.</p></div>
           <nav className="footer-nav" aria-label="Navegación del pie de página"><strong>Explorar</strong>{footerLinks.map((link) => <Link href={link.href} key={link.href}>{link.label}</Link>)}</nav>
           <div className="footer-contact"><strong>Contacto</strong><a href={'mailto:' + contactEmail}>{contactEmail}</a><a href="https://github.com/MarioIbago" target="_blank" rel="noreferrer">GitHub ↗</a><a href={linkedInUrl} target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
         </div>
